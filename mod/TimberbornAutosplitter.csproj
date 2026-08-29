@@ -1,0 +1,105 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <AssemblyName>Code</AssemblyName>
+    <RootNamespace>Autosplitter</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Adjust GameRoot to your Timberborn install path -->
+  <PropertyGroup>
+    <GameRoot>C:\Program Files (x86)\Steam\steamapps\common\Timberborn</GameRoot>
+    <GameManaged>$(GameRoot)\Timberborn_Data\Managed</GameManaged>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Bindito.Core">
+      <HintPath>$(GameManaged)\Bindito.Core.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.BaseComponentSystem">
+      <HintPath>$(GameManaged)\Timberborn.BaseComponentSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.BlockSystem">
+      <HintPath>$(GameManaged)\Timberborn.BlockSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.FactionSystem">
+      <HintPath>$(GameManaged)\Timberborn.FactionSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.GameDistricts">
+      <HintPath>$(GameManaged)\Timberborn.GameDistricts.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.GameFactionSystem">
+      <HintPath>$(GameManaged)\Timberborn.GameFactionSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.GameWonderCompletion">
+      <HintPath>$(GameManaged)\Timberborn.GameWonderCompletion.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.InventorySystem">
+      <HintPath>$(GameManaged)\Timberborn.InventorySystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.Population">
+      <HintPath>$(GameManaged)\Timberborn.Population.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.SingletonSystem">
+      <HintPath>$(GameManaged)\Timberborn.SingletonSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.TemplateSystem">
+      <HintPath>$(GameManaged)\Timberborn.TemplateSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.TimeSystem">
+      <HintPath>$(GameManaged)\Timberborn.TimeSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.Common">
+      <HintPath>$(GameManaged)\Timberborn.Common.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.BlueprintSystem">
+      <HintPath>$(GameManaged)\Timberborn.BlueprintSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.Buildings">
+      <HintPath>$(GameManaged)\Timberborn.Buildings.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.ScienceSystem">
+      <HintPath>$(GameManaged)\Timberborn.ScienceSystem.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Timberborn.Wonders">
+      <HintPath>$(GameManaged)\Timberborn.Wonders.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManaged)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Copy Code.dll to mod folder after build -->
+  <Target Name="DeployMod" AfterTargets="Build">
+    <PropertyGroup>
+      <ModDest>$(USERPROFILE)\Documents\Timberborn\Mods\AutosplitterStateExport</ModDest>
+      <AslDest>$(USERPROFILE)\Documents\Timberborn</AslDest>
+    </PropertyGroup>
+    <MakeDir Directories="$(ModDest)" />
+    <Copy SourceFiles="$(OutputPath)Code.dll" DestinationFolder="$(ModDest)" />
+    <Copy SourceFiles="manifest.json" DestinationFolder="$(ModDest)" />
+    <Copy SourceFiles="..\autosplitter\timberborn.asl" DestinationFolder="$(AslDest)" />
+    <Message Text="Deployed mod to $(ModDest)" Importance="High" />
+    <Message Text="Deployed ASL to $(AslDest)" Importance="High" />
+  </Target>
+</Project>

@@ -1,0 +1,14 @@
+# Build output
+bin/
+obj/
+
+# Python
+__pycache__/
+*.pyc
+
+# LiveSplit personal files
+*.lss
+*.lsl
+
+# Runtime logs
+*.log
