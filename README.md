@@ -38,10 +38,10 @@ This updates every 0.5 seconds while a game is running.
 
 1. Right-click LiveSplit → **Edit Splits**.
 2. Set **Game Name** to `Timberborn` and **Run Category** to `Wonder`.
-3. LiveSplit will prompt you to activate the auto splitter — click **Activate**. It downloads the ASL automatically with no file paths to configure.
+3. LiveSplit will prompt you to activate the auto splitter — click **Activate**.
 4. Add your split names to match the splits listed below.
 
-If the auto splitter is not yet registered, you can load it manually: right-click → **Edit Layout** → **+** → **Scriptable Auto Splitter**, then point it at `autosplitter/timberborn.asl`.
+LiveSplit downloads and manages the autosplitter script automatically — no files to configure.
 
 ---
 

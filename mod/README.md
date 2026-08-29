@@ -38,7 +38,7 @@ Once installed, the mod writes to:
 2. Set **Game Name** to `Timberborn` and **Run Category** to `Wonder`
 3. LiveSplit will prompt you to activate the autosplitter — click **Activate**
 
-If the autosplitter is not yet registered in LiveSplit, follow the manual setup instructions in the [GitHub repo](https://github.com/MHVandborg/timberborn_speedrun).
+That's it. LiveSplit downloads and manages the autosplitter script automatically.
 
 ## State file format
 
