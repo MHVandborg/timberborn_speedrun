@@ -92,7 +92,7 @@
   <!-- Copy Code.dll to mod folder after build -->
   <Target Name="DeployMod" AfterTargets="Build">
     <PropertyGroup>
-      <ModDest>$(USERPROFILE)\Documents\Timberborn\Mods\AutosplitterStateExport</ModDest>
+      <ModDest>$(USERPROFILE)\Documents\Timberborn\Mods\LiveSplitAutosplitter</ModDest>
       <AslDest>$(USERPROFILE)\Documents\Timberborn</AslDest>
     </PropertyGroup>
     <MakeDir Directories="$(ModDest)" />

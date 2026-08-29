@@ -1,4 +1,4 @@
-# Autosplitter State Export
+# LiveSplit Autosplitter
 
 A mod for Timberborn speedrunners. Exports live game state to a JSON file every 0.5 seconds so that LiveSplit can automatically split on key in-game events.
 
