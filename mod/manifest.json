@@ -1,6 +1,6 @@
 {
   "name": "Autosplitter_State_Export",
-  "version_number": "0.1.0",
+  "version_number": "1.0.0",
   "website_url": "https://github.com/MHVandborg/timberborn_speedrun",
   "description": "Exports live game state to a JSON file every 0.5s for the Timberborn LiveSplit autosplitter. Required for Wonder category speedruns.",
   "dependencies": [],
