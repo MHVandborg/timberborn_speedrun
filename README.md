@@ -20,7 +20,9 @@ A script for LiveSplit's Scriptable Auto Splitter component that reads the JSON 
 
 ### 1. Install the mod
 
-Install **Autosplitter State Export** via your mod manager (Thunderstore/r2modman) or drop `Code.dll` and `manifest.json` into:
+Timberborn mods are distributed through [Thunderstore](https://thunderstore.io/c/timberborn/), not Steam Workshop. Install **Autosplitter State Export** via **r2modman** or the **Timberborn in-game mod browser** — both place the mod in the correct location automatically.
+
+For manual installation, drop `Code.dll` and `manifest.json` into:
 
 ```
 %USERPROFILE%\Documents\Timberborn\Mods\AutosplitterStateExport\

@@ -20,7 +20,9 @@ The [Timberborn LiveSplit autosplitter](https://github.com/MHVandborg/timberborn
 
 ## Installation
 
-Install via r2modman or drop `Code.dll` and `manifest.json` into:
+Timberborn mods are distributed through [Thunderstore](https://thunderstore.io/c/timberborn/), not Steam Workshop. Install via **r2modman** or the **Timberborn in-game mod browser** — both place the mod in the correct location automatically, no manual steps needed.
+
+For manual installation, drop `Code.dll` and `manifest.json` into:
 
 ```
 %USERPROFILE%\Documents\Timberborn\Mods\AutosplitterStateExport\
