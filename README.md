@@ -1,6 +1,9 @@
 # Timberborn Autosplitter
 
 Automatic splits for [Timberborn](https://store.steampowered.com/app/1062090/Timberborn/) speedruns in LiveSplit.
+[Speedrun.com - Timberborn](https://www.speedrun.com/Timberborn)
+[Discord - Timberborn Speedrun](https://discord.gg/aWEVPTcJVG)
+
 
 ## How it works
 
