@@ -3,6 +3,6 @@
   "Version": "0.1.0",
   "Id": "Autosplitter.StateExport",
   "MinimumGameVersion": "1.0.0.0",
-  "Description": "Exports live game state (logs, population, buildings) to a JSON file for speedrun autosplitters.",
+  "Description": "Exports live game state (logs, population, buildings, wonder activation) to a JSON file for the Timberborn LiveSplit autosplitter (Wonder category).",
   "RequiredMods": []
 }
