@@ -6,6 +6,7 @@
   "dependencies": [],
 
   "Name": "Autosplitter State Export",
+  "Version": "1.0.0",
   "Id": "Autosplitter.StateExport",
   "MinimumGameVersion": "1.0.0.0",
   "RequiredMods": []
