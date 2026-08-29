@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Run version="1.7.0">
+  <GameIcon />
+  <GameName>Timberborn - Wonder (Earth Recultivator)</GameName>
+  <CategoryName>Any%</CategoryName>
+  <LayoutPath>
+  </LayoutPath>
+  <Metadata>
+    <Run id="" />
+    <Platform usesEmulator="False">
+    </Platform>
+    <Region>
+    </Region>
+    <Variables />
+    <CustomVariables />
+  </Metadata>
+  <Offset>00:00:00</Offset>
+  <AttemptCount>1</AttemptCount>
+  <AttemptHistory>
+    <Attempt id="1" started="01/01/2000 00:00:00" isStartedSynced="False" ended="01/01/2000 01:33:27" isEndedSynced="False">
+      <RealTime>01:33:27.0000000</RealTime>
+    </Attempt>
+  </AttemptHistory>
+  <Segments>
+    <Segment>
+      <Name>Forester</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:03:38.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:03:38.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:03:38.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Gear Workshop</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:14:03.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:10:25.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:10:25.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Tapper's Shack</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:22:54.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:08:51.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:08:51.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Observatory</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:23:48.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:00:54.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:00:54.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Smelter and Wood Workshop</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:42:42.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:18:54.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:18:54.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Research Earth Recultivator</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>00:58:00.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:15:18.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:15:18.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+    <Segment>
+      <Name>Launch Earth Recultivator</Name>
+      <Icon />
+      <SplitTimes>
+        <SplitTime name="Personal Best">
+          <RealTime>01:33:27.0000000</RealTime>
+        </SplitTime>
+      </SplitTimes>
+      <BestSegmentTime>
+        <RealTime>00:35:27.0000000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="1"><RealTime>00:35:27.0000000</RealTime></Time>
+      </SegmentHistory>
+    </Segment>
+  </Segments>
+  <AutoSplitterSettings />
+</Run>

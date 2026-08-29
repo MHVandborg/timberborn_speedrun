@@ -41,9 +41,20 @@ This updates every 0.5 seconds while a game is running.
 1. Right-click LiveSplit → **Edit Splits**.
 2. Set **Game Name** to `Timberborn` and **Run Category** to `Wonder`.
 3. LiveSplit will prompt you to activate the auto splitter — click **Activate**.
-4. Add your split names to match the splits listed below.
+4. Load a splits file (see below) or add your own segment names manually.
 
 LiveSplit downloads and manages the autosplitter script automatically — no files to configure.
+
+#### Splits files
+
+Pre-made splits files are available in the [`splits/`](splits/) folder:
+
+| File | Download | Description |
+|---|---|---|
+| `timberborn_blank.lss` | [Download](https://raw.githubusercontent.com/MHVandborg/timberborn_speedrun/master/splits/timberborn_blank.lss) | All segments, no times — good starting point for new runners |
+| `timberborn_wr.lss` | [Download](https://raw.githubusercontent.com/MHVandborg/timberborn_speedrun/master/splits/timberborn_wr.lss) | World record reference times |
+
+Open the downloaded file via **right-click LiveSplit → Open Splits**.
 
 ---
 

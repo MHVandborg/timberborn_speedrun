@@ -10,6 +10,9 @@ __pycache__/
 *.lss
 *.lsl
 
+# But track the shared splits templates
+!splits/*.lss
+
 # Runtime logs
 *.log
 
