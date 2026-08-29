@@ -28,6 +28,7 @@ startup {
     vars.PrevWonderActivated = false;
     vars.LastGameId  = "";
     vars.Fired       = new System.Collections.Generic.HashSet<string>();
+    vars.ModMissing  = false;
 
     vars.ForesterTemplates = new System.Collections.Generic.HashSet<string> {
         "Forester.Folktails", "Forester.IronTeeth"
@@ -54,6 +55,23 @@ update {
     vars.PrevBuildings                   = vars.Buildings;
     vars.PrevEarthRecultivatorResearched = vars.EarthRecultivatorResearched;
     vars.PrevWonderActivated             = vars.WonderActivated;
+
+    if (!System.IO.File.Exists(vars.FilePath)) {
+        if (!vars.ModMissing) {
+            var procs = System.Diagnostics.Process.GetProcessesByName("Timberborn");
+            if (procs.Length > 0) {
+                vars.ModMissing = true;
+                System.Windows.Forms.MessageBox.Show(
+                    "Timberborn is running but the autosplitter mod is not installed.\n\n" +
+                    "Install \"Autosplitter State Export\" from Thunderstore (or via r2modman) and restart the game.",
+                    "Timberborn Autosplitter — Mod Missing",
+                    System.Windows.Forms.MessageBoxButtons.OK,
+                    System.Windows.Forms.MessageBoxIcon.Warning);
+            }
+        }
+        return;
+    }
+    vars.ModMissing = false;
 
     try {
         var text = System.IO.File.ReadAllText(vars.FilePath);
