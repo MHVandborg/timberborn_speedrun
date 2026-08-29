@@ -12,3 +12,6 @@ __pycache__/
 
 # Runtime logs
 *.log
+
+# Release packages
+*.zip
