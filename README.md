@@ -2,10 +2,17 @@
 
 Automatic splits for [Timberborn](https://store.steampowered.com/app/1062090/Timberborn/) speedruns in LiveSplit.
 
-Two components work together:
+## How it works
 
-- **mod/** — a Timberborn mod that writes live game state to a JSON file
-- **autosplitter/** — a LiveSplit ASL script that reads that file and triggers splits
+Timberborn provides no way for external tools to observe what is happening in an active game — there are no exported stats, no live API, and the autosave files are only written periodically. This makes it impossible for a tool like LiveSplit to know when you built a Forester, researched a technology, or activated a Wonder.
+
+This project solves that with two components:
+
+**`mod/` — Timberborn game mod**
+A small mod that hooks into Timberborn's own systems and exports live game state to a JSON file on your machine every 0.5 seconds. It tracks population, log counts, which buildings have been completed, which technologies have been researched, and whether the Wonder has been activated. It also generates a unique run ID each time you start a new game, which is what LiveSplit uses to detect that a new run has begun.
+
+**`autosplitter/` — LiveSplit ASL script**
+A script for LiveSplit's Scriptable Auto Splitter component that reads the JSON file produced by the mod. It watches for changes to the run ID to start the timer, then monitors the building and research state to fire splits at the right moments. Each split is individually toggleable so you can adapt the layout to different categories.
 
 ---
 
